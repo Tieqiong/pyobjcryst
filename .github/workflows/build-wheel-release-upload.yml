@@ -14,7 +14,7 @@ jobs:
     with:
       project: pyobjcryst
       c_extension: true
-      maintainer_GITHUB_username: sbillinge
+      maintainer_GITHUB_username: Tieqiong
     secrets:
       PYPI_TOKEN: ${{ secrets.PYPI_TOKEN }}
       PAT_TOKEN: ${{ secrets.PAT_TOKEN }}
