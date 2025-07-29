@@ -91,7 +91,7 @@ jobs:
           python -m pip wheel --no-deps --wheel-dir ./dist .
           if [[ "${{ matrix.buildplat }}" == "ubuntu-latest" ]]; then
             conda install auditwheel patchelf
-            auditwheel repair dist/*.whl -w dist/
+            LD_LIBRARY_PATH=$CONDA_PREFIX/lib auditwheel repair dist/*.whl -w dist/
             rm dist/*-linux_*.whl
           fi
 
