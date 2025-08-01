@@ -10,7 +10,7 @@ on:
 
 jobs:
   release:
-    uses: Tieqiong/release-scripts/.github/workflows/_build-wheel-release-upload.yml@test
+    uses: Tieqiong/release-scripts/.github/workflows/_build-wheel-release-upload.yml@pypi
     with:
       project: pyobjcryst
       c_extension: true
